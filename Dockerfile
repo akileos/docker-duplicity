@@ -18,6 +18,7 @@ RUN set -x \
  && pip install \
       pydrive==1.3.1 \
       fasteners==0.14.1 \
+      mediafire>=0.5.2 \
  && apk del --purge py-pip \
  && adduser -D -u 1896 duplicity \
  && mkdir -p /home/duplicity/.cache/duplicity \
